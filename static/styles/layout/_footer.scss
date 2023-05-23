@@ -1,0 +1,99 @@
+.footer {
+  margin: 86px 0 82px;
+  &__row {
+    display: flex;
+    @include respond(small) {
+      flex-wrap: wrap;
+    }
+    &__col {
+      &__first {
+        margin-right: auto;
+        padding-right: 25px;
+      }
+      &__three {
+        margin-right: 85px;
+        white-space: nowrap;
+        @include respond(large) {
+          margin-right: 35px;
+        }
+        @include respond(small) {
+          margin-top: 30px;
+          margin-right: 50px;
+        }
+        &:last-child {
+          margin-right: 0;
+          @include respond(small) {
+            margin-right: 60px;
+          }
+        }
+      }
+      &__text {
+        margin: 15px 0 40px;
+        max-width: 300px;
+        @include respond(small) {
+          max-width: 100%;
+          margin: 15px 0 20px;
+        }
+      }
+      &__social {
+        &__links {
+          margin-right: 30px;
+          font-size: 23px;
+          text-decoration: none;
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+      &__title {
+        margin-bottom: 18px;
+        padding-top: 8px;
+        &__subtext {
+          margin-bottom: 13px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+          &__link {
+            text-decoration: none;
+            font-size: 14px;
+            line-height: 27px;
+            letter-spacing: 0.5px;
+            color: $color-text;
+          }
+        }
+      }
+    }
+  }
+}
+
+.fa-square-facebook {
+  color: #4267b2;
+  transition: all 0.4s ease;
+  &:hover {
+    color: #3b5998;
+  }
+}
+
+.fa-twitter {
+  color: #1da1f2;
+  transition: all 0.4s ease;
+  &:hover {
+    color: #00b6f1;
+  }
+}
+
+.fa-youtube {
+  color: #ff0000;
+  transition: all 0.4s ease;
+  &:hover {
+    color: #3b5998;
+  }
+}
+
+.fa-linkedin-in {
+  color: #006699;
+  transition: all 0.4s ease;
+  &:hover {
+    color: #3b5998;
+  }
+}

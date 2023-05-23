@@ -1,0 +1,42 @@
+.logo-sect {
+  margin-top: 100px;
+  @include respond(medium) {
+    margin-top: 59px;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    @include respond(large) {
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  }
+  &__link {
+    @include respond(small) {
+      padding-bottom: 5px;
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+    &__logo {
+      &__first {
+        width: 217px;
+        height: 42px;
+      }
+      &__second {
+        width: 190px;
+        height: 34px;
+      }
+      &__third {
+        width: 230px;
+        height: 42px;
+      }
+      &__fourth {
+        width: 188px;
+        height: 38px;
+      }
+    }
+  }
+}

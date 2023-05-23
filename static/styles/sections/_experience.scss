@@ -1,0 +1,60 @@
+.experience {
+  background: url("/static/images/experience/exp-bg.svg") no-repeat;
+  background-position: top;
+  background-size: cover;
+  position: relative;
+  margin-top: 40px;
+  @include respond(large) {
+    overflow: hidden;
+  }
+  @include respond(small) {
+    margin-top: 0;
+  }
+  &__row {
+    padding: 156px 0 55px;
+    @include respond(large) {
+      padding: 200px 0 55px;
+    }
+    @include respond(small) {
+      padding: 185px 0 0;
+      display: flex;
+      flex-direction: column;
+    }
+    &__col {
+      max-width: 360px;
+      &__title {
+        color: #ffffff;
+        margin-bottom: 15px;
+        @include respond(small) {
+          font-size: 28px;
+          line-height: 40px;
+        }
+      }
+      &__text {
+        color: #ffffff;
+        margin-bottom: 30px;
+      }
+      &__link {
+        text-decoration: none;
+        background-color: #ffffff;
+        color: $color-text;
+        padding: 18px 40px 16px;
+        &:hover {
+          background: #f3cbcb;
+        }
+        @include respond(small) {
+          margin-bottom: 20px;
+        }
+      }
+    }
+    &__image {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      @include respond(small) {
+        position: static;
+        max-width: 100%;
+      }
+    }
+  }
+}

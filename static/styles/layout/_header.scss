@@ -1,0 +1,44 @@
+.header {
+  position: fixed;
+  padding: 37px 0;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: #ffffff;
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__link {
+    &__logo {
+      width: 168px;
+      height: 44px;
+    }
+  }
+  &__navigation {
+    @include respond(small) {
+      display: none;
+    }
+    &__list {
+      display: flex;
+      gap: 42px;
+      @include respond(large) {
+        gap: 20px;
+      }
+      &__item {
+        &__link {
+          text-decoration: none;
+          color: $color-text;
+          font-size: 16px;
+          line-height: 24px;
+          &--active {
+            font-weight: 700;
+            color: $color-orange;
+          }
+        }
+      }
+    }
+  }
+}

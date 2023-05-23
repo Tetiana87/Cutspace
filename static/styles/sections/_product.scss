@@ -1,0 +1,126 @@
+.product {
+  margin-top: 145px;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    white,
+    white 50%,
+    #f5f6fa 10%,
+    #f5f6fa 40%
+  );
+  @include respond(medium) {
+    padding-bottom: 145px;
+    background: linear-gradient(
+      to bottom,
+      white,
+      white 40%,
+      #f5f6fa 10%,
+      #f5f6fa 50%
+    );
+  }
+  @include respond(small) {
+    padding-bottom: 330px;
+    background: linear-gradient(
+      to bottom,
+      white,
+      white 30%,
+      #f5f6fa 20%,
+      #f5f6fa 50%
+    );
+  }
+  &__list {
+    background: url(/static/images/product/bg.svg);
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    display: flex;
+    gap: 96px;
+    align-items: flex-end;
+    font-size: 0;
+    height: 464px;
+    @include respond(xl) {
+      gap: 30px;
+    }
+    @include respond(medium) {
+      flex-direction: column;
+    }
+    &__item {
+      &--about {
+        max-width: 370px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        margin-right: 10px;
+        @include respond(medium) {
+          max-width: 100%;
+          margin-right: 0;
+        }
+        @include respond(medium) {
+          margin-top: 40px;
+        }
+      }
+      &__image {
+        box-shadow: 4px 20px 42px -2px rgba(0, 0, 0, 0.12);
+        border-radius: 0px 20px 0px 20px;
+        max-width: 555px;
+        @include respond(medium) {
+          margin-top: 30px;
+        }
+        @include respond(small) {
+          width: 100%;
+          height: 400px;
+          object-fit: contain;
+        }
+      }
+      &__title {
+        color: #ffffff;
+        @include respond(large) {
+          font-size: 30px;
+          line-height: 40px;
+        }
+        @include respond(medium) {
+          color: $color-text;
+        }
+      }
+      &__text {
+        margin-top: 15px;
+        color: #ffffff;
+        @include respond(medium) {
+          color: $color-text;
+        }
+      }
+      &__block {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-top: 30px;
+        @include respond(small) {
+          flex-direction: column;
+          max-width: 173px;
+        }
+        &__link {
+          text-decoration: none;
+          padding: 18px 41px 16px;
+          &:hover {
+            background: darken($color-orange, 10%);
+          }
+          &--watch {
+            background: #ffffff;
+            color: $color-text;
+            padding: 18px 28px 16px;
+            &:hover {
+              background: darken(#ffffff, 10%);
+            }
+          }
+          &__play {
+            width: 12px;
+            height: 12px;
+            border-radius: 1px;
+            margin-right: 8px;
+          }
+        }
+      }
+    }
+  }
+}

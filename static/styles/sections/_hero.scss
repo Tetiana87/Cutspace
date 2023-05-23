@@ -1,0 +1,96 @@
+.hero {
+  margin-top: 112px;
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include respond(small) {
+      flex-direction: column-reverse;
+    }
+    &__col {
+      max-width: 50%;
+      @include respond(small) {
+        max-width: 100%;
+      }
+      &__title {
+        margin: 0 0 25px;
+        width: 674px;
+        position: relative;
+        @include respond(large) {
+          font-size: 25px;
+          line-height: 40px;
+          width: 100%;
+        }
+        @include respond(small) {
+          margin-top: 25px;
+        }
+      }
+      &__text {
+        margin-bottom: 42px;
+        max-width: 85%;
+        @include respond(small) {
+          max-width: 100%;
+        }
+      }
+      &__form {
+        position: relative;
+        max-width: 460px;
+        overflow: hidden;
+        &__icon {
+          width: 24px;
+          height: 19px;
+          position: absolute;
+          left: 28px;
+          top: 50%;
+          transform: translateY(-50%);
+          @include respond(large) {
+            top: 20px;
+            transform: translateY(0);
+            z-index: 1;
+          }
+        }
+        &__input {
+          border-radius: 29px;
+          border: 0;
+          font-size: 16px;
+          line-height: 24px;
+          padding: 17px 170px 17px 72px;
+          font-family: "Poppins", sans-serif;
+          outline: none;
+          box-shadow: 0px 17px 42px rgba(0, 0, 0, 0.12);
+          width: 100%;
+          @include respond(large) {
+            padding: 17px 75px 17px 72px;
+            clip-path: inset(0 0 10% 0);
+          }
+          @include respond(small) {
+            padding: 17px 0px 17px 72px;
+          }
+          &::placeholder {
+            color: #bbbbbb;
+          }
+        }
+        &__btnposition {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          right: 0;
+          &:hover {
+            background: darken($color-orange, 10%);
+          }
+          @include respond(large) {
+            position: static;
+            margin-top: 40px;
+          }
+        }
+      }
+      &__image {
+        max-width: 100%;
+        margin-left: 10px;
+        @include respond(small) {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}

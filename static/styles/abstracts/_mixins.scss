@@ -1,0 +1,87 @@
+@mixin font-face(
+  $font-family,
+  $file-path,
+  $font-weight: normal,
+  $font-style: normal
+) {
+  @font-face {
+    font-family: $font-family;
+    src: url(/static/fonts/#{$file-path}.ttf);
+    font-weight: $font-weight;
+    font-style: $font-style;
+  }
+}
+
+@include font-face("Poppins", "Poppins-Regular", 400);
+@include font-face("Poppins", "Poppins-Bold", 700);
+
+@mixin h1 {
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 79px;
+  letter-spacing: 0.8px;
+  color: #323232;
+}
+
+@mixin h2 {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 62px;
+  letter-spacing: 0.8px;
+  color: #323232;
+}
+
+@mixin h3 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 42px;
+  letter-spacing: 0.5px;
+  color: #323232;
+}
+
+@mixin h4 {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 32px;
+  letter-spacing: 0.5px;
+  color: #323232;
+}
+
+@mixin h5 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.8px;
+  color: #323232;
+}
+
+@mixin paragraph {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: 1.15px;
+  color: #323232;
+}
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == small {
+    @media (max-width: 770px) {
+      @content;
+    }
+  }
+  @if $breakpoint == medium {
+    @media (max-width: 830px) {
+      @content;
+    }
+  }
+  @if $breakpoint == large {
+    @media (max-width: 990px) {
+      @content;
+    }
+  }
+  @if $breakpoint == xl {
+    @media (max-width: 1220px) {
+      @content;
+    }
+  }
+}
