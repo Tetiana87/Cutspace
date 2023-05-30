@@ -1,5 +1,21 @@
 .footer {
-  margin: 86px 0 82px;
+  margin: 90px 0 82px;
+  @include respond(medium) {
+    margin: 60px 0 30px;
+  }
+  &__link__logo {
+    width: 168px;
+    height: 44px;
+  }
+  &_container {
+    padding: 0 164px 0 159px;
+    @include respond(xl) {
+      padding: 0 80px;
+    }
+    @include respond(large) {
+      padding: 0 30px;
+    }
+  }
   &__row {
     display: flex;
     @include respond(small) {
@@ -11,7 +27,7 @@
         padding-right: 25px;
       }
       &__three {
-        margin-right: 85px;
+        margin-right: 88px;
         white-space: nowrap;
         @include respond(large) {
           margin-right: 35px;
@@ -28,17 +44,19 @@
         }
       }
       &__text {
-        margin: 15px 0 40px;
-        max-width: 300px;
+        margin: 11px 0 37px;
+        max-width: 309px;
+        padding-left: 7px;
         @include respond(small) {
           max-width: 100%;
           margin: 15px 0 20px;
         }
       }
       &__social {
+        margin-left: 7px;
         &__links {
-          margin-right: 30px;
-          font-size: 23px;
+          margin-right: 25px;
+          font-size: 25px;
           text-decoration: none;
           &:last-child {
             margin-right: 0;

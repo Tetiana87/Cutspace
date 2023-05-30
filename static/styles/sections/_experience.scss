@@ -3,7 +3,7 @@
   background-position: top;
   background-size: cover;
   position: relative;
-  margin-top: 40px;
+  margin-top: 35px;
   @include respond(large) {
     overflow: hidden;
   }
@@ -11,7 +11,7 @@
     margin-top: 0;
   }
   &__row {
-    padding: 156px 0 55px;
+    padding: 160px 0px 53px 0px;
     @include respond(large) {
       padding: 200px 0 55px;
     }
@@ -38,7 +38,7 @@
         text-decoration: none;
         background-color: #ffffff;
         color: $color-text;
-        padding: 18px 40px 16px;
+        padding: 17px 40px 16px 43px;
         &:hover {
           background: #f3cbcb;
         }
@@ -50,7 +50,7 @@
     &__image {
       position: absolute;
       bottom: 0;
-      left: 50%;
+      left: 48.5%;
       @include respond(small) {
         position: static;
         max-width: 100%;

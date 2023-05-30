@@ -1,7 +1,19 @@
 .cards {
   padding: 59px 0;
+  @include respond(medium) {
+    padding-bottom: 0;
+  }
   @include respond(small) {
     margin-bottom: 10px;
+  }
+  &__container {
+    padding: 0 185px 0 145px;
+    @include respond(xl) {
+      padding: 0 90px 0 70px;
+    }
+    @include respond(large) {
+      padding: 0 30px;
+    }
   }
   &__description {
     display: flex;
@@ -21,9 +33,11 @@
     }
     &__text {
       max-width: 398px;
+      margin-left: 20px;
       @include respond(large) {
         max-width: 100%;
         margin-top: 20px;
+        margin-left: 0;
       }
     }
   }
@@ -38,7 +52,7 @@
       border-radius: 0px 0px 5px 5px;
       filter: drop-shadow(0px 10px 52px rgba(0, 0, 0, 0.08));
       width: 350px;
-      margin: 58px 30px 0 0;
+      margin: 57px 30px 0 0;
       position: relative;
       &:nth-child(n + 2) {
         filter: none;
@@ -55,7 +69,7 @@
         width: 100%;
       }
       &__text {
-        margin: 31px 29px 23px;
+        margin: 28px 29px 23px;
       }
       &__name {
         font-weight: 700;
@@ -64,6 +78,7 @@
         letter-spacing: 0.6px;
         color: $color-text;
         padding-left: 29px;
+        margin-bottom: 2px;
       }
       &__city {
         color: $color-orange;

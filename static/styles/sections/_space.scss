@@ -1,5 +1,5 @@
 .space {
-  margin-top: 100px;
+  margin-top: 98px;
   @include respond(medium) {
     margin-top: 59px;
   }
@@ -70,8 +70,8 @@
             }
           }
           &__text {
-            margin-left: 20px;
-            padding: 32px 29px 32px 0;
+            margin-left: 19px;
+            padding: 31px 29px 32px 0;
           }
         }
       }
@@ -79,6 +79,7 @@
     &__content {
       max-width: 374px;
       margin-left: 50px;
+      padding-top: 10px;
       @include respond(large) {
         max-width: 100%;
         margin: 30px 0 0 0;

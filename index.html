@@ -210,37 +210,40 @@
     </section>
     <section class="product">
       <div class="container">
-        <ul class="product__list">
-          <li class="product__list__item">
-            <img
-              class="product__list__item__image"
-              src="static/images/product/bg-image.jpg"
-              alt="Product"
-            />
-          </li>
-          <li class="product__list__item product__list__item--about">
-            <h2 class="h2 product__list__item__title">
-              Start using our product
-            </h2>
-            <p class="paragraph product__list__item__text">
-              Quid ex eo ortum, tam inportuno tamque crudeli; sin, ut aliquid ex
-            </p>
-            <div class="product__list__item__block">
-              <a class="btn product__list__item__block__link" href="#"
-                >Contact Us</a
-              >
-              <a
-                class="btn product__list__item__block__link product__list__item__block__link--watch"
-                href="#"
-              >
-                <svg class="product__list__item__block__link__play">
-                  <use xlink:href="static/images/sprite.svg#play"></use>
-                </svg>
-                Watch now</a
-              >
-            </div>
-          </li>
-        </ul>
+        <div class="product__block">
+          <ul class="product__list">
+            <li class="product__list__item product__list__item--image">
+              <img
+                class="product__list__item__image"
+                src="static/images/product/product-image.jpg"
+                alt="Product"
+              />
+            </li>
+            <li class="product__list__item product__list__item--about">
+              <h2 class="h2 product__list__item__title">
+                Start using our product
+              </h2>
+              <p class="paragraph product__list__item__text">
+                Quid ex eo ortum, tam inportuno tamque crudeli; sin, ut aliquid
+                ex
+              </p>
+              <div class="product__list__item__block">
+                <a class="btn product__list__item__block__link" href="#"
+                  >Contact Us</a
+                >
+                <a
+                  class="btn product__list__item__block__link product__list__item__block__link--watch"
+                  href="#"
+                >
+                  <svg class="product__list__item__block__link__play">
+                    <use xlink:href="static/images/sprite.svg#play"></use>
+                  </svg>
+                  Watch now</a
+                >
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
     <section class="services">
@@ -331,7 +334,7 @@
       </div>
     </section>
     <section class="cards">
-      <div class="container">
+      <div class="container cards__container">
         <div class="cards__description">
           <h2 class="h2 cards__description__title">
             Thanks for your nice words to us
@@ -417,11 +420,11 @@
       </div>
     </section>
     <footer class="footer">
-      <div class="container">
+      <div class="container footer_container">
         <div class="footer__row">
           <div class="footer__row__col__first">
             <a class="header__link" href="#hero">
-              <svg class="header__link__logo">
+              <svg class="footer__link__logo">
                 <use xlink:href="static/images/sprite.svg#logo"></use>
               </svg>
             </a>

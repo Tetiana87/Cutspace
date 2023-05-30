@@ -1,5 +1,5 @@
 .services {
-  padding-top: 145px;
+  padding-top: 143px;
   width: 100%;
   height: 100%;
   background: linear-gradient(
@@ -9,6 +9,9 @@
     #f5f6fa 20%,
     #f5f6fa 50%
   );
+  @include respond(medium) {
+    padding-top: 0;
+  }
   &__title {
     text-align: center;
     margin-bottom: 10px;
@@ -44,14 +47,14 @@
       &__title {
         line-height: 63px;
         color: #ffffff;
-        margin-top: 15px;
+        margin-top: 13px;
         &--black {
           color: $color-text;
         }
       }
       &__text {
         color: #ffffff;
-        margin: 1px 88px 25px;
+        margin: 1px 83px 25px 88px;
         &--black {
           color: $color-text;
         }
@@ -61,6 +64,7 @@
         margin-bottom: 39px;
         background: #ffffff;
         color: $color-orange;
+        padding: 18px 38px 16px 41px;
       }
     }
   }
